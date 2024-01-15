@@ -3,14 +3,62 @@
     ViewBag.Title = ViewData["SignIn"];
     Layout = "_UserLayout";
 }
+<main>
+     
+    <div class="slider-area">
+        <div class="single-slider hero-overly slider-height2 slider-bg2 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-xxl-12">
 
-<!DOCTYPE html>
+                        <div class="hero-caption hero-caption2">
+                            <h2>Sign In</h2>
+                        </div>
+                    </div>
+                    <section class="contact-section">
+            <div class="container">
+                <div class="row">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>SignIn</title>
-</head>
-<body>
-</body>
-</html>
+                    <div class="col-lg-8">
+                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                            <div class="row">
+
+
+                                <div class="col-sm-6">
+                                    <div class="form-group" style="color:white">
+                                        <input style="color:white" class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email / Username / Phonenumber '" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group" style="color:white">
+                                        <input style="color:white" class="form-control" name="subject" id="subject" type="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" style="color:white !important" class="button button-contactForm btn_1">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+</main>
