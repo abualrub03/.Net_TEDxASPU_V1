@@ -1312,7 +1312,7 @@ hr {
 
         .slider-area .hero-caption .video-icon a::after {
             position: absolute;
-            border: 59px solid rgba(255,255,255,0.06);
+            border: 59px solid rgba(255,255,255,0.2);
             content: "";
             border-radius: 50%;
             left: -31px;
@@ -1432,7 +1432,7 @@ hr {
 
 .slider-area .hero-footer {
     position: absolute;
-    bottom: -141px;
+    bottom: -30px;
     right: 50px;
     text-align: right
 }
