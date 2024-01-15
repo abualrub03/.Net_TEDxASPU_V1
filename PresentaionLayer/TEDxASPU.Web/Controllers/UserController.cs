@@ -14,7 +14,16 @@ namespace Presentation.Controllers
         public IActionResult Speakers()
         {
             return View();
-        }public IActionResult Schedual()
+        }
+        public IActionResult SignUp()
+        {
+            return View();
+        }
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+        public IActionResult Schedual()
         {
             return View();
         }

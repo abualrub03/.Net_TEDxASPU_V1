@@ -802,7 +802,6 @@ hr {
         }
 
 .btn_01 {
-    color: #EB0028 !important;
     border: 1px solid #EB0028;
     text-transform: uppercase;
     display: inline-block;
@@ -1217,7 +1216,7 @@ hr {
 }
 
 .slider-area .hero-caption h1 {
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 700;
     margin-bottom: 64px;
     color: #fff;
@@ -1444,7 +1443,7 @@ hr {
 }
 
 .slider-area .hero-footer h4 {
-    color: #ff0000ab;
+    color: #ff0000cc;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
