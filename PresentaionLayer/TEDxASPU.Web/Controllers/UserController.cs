@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
+using TEDxASPU.Provider;
 
 namespace Presentation.Controllers
 {
@@ -15,14 +19,36 @@ namespace Presentation.Controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult SignUp()
         {
             return View();
+        } 
+        [HttpPost]
+        public IActionResult SignUp(Entities.Account acc)
+        {
+            var result = new TEDxASPUProvider().SignUpNewUser(acc);
+            return View();
         }
+        [HttpGet]
         public IActionResult SignIn()
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult SignIn(Entities.Account acc)
+        {
+            var data = new TEDxASPUProvider().SignInNewUser(acc);
+            
+            if (data != null)
+            {
+                return RedirectToAction("AudienceDashboard", "Audience", data);
+            }
+            else
+                return View("login", acc);
+        }
+        
+
         public IActionResult Schedual()
         {
             return View();

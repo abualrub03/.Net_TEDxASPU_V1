@@ -12,7 +12,7 @@ namespace DataAccess
             {
                 var Builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: false);
                 IConfiguration configuration = Builder.Build();
-                connectionString = configuration.GetConnectionString("DBConnection");
+            connectionString = "Data Source=localhost;Initial Catalog=TEDxASPU;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             }
             public bool ExecuteNonQuery(string Command, CommandType CommandType = CommandType.StoredProcedure)
             {

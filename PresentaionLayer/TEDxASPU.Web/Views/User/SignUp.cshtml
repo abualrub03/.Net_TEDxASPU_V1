@@ -3,28 +3,103 @@
     ViewBag.Title = ViewData["SignUp"];
     Layout = "_UserLayout";
 }
+<body class="body-bg">
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>SignUp</title>
-</head>
-<body>
-
-<h4>AuthorizedUserController</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="SignUp">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+   
+    <main>
+        <div class="slider-area">
+            <div class="single-slider hero-overly slider-height2 slider-bg2 d-flex align-items-center">
+                <div class="container">
+                </div>
             </div>
-        </form>
-    </div>
-</div>
+        </div>
 
+
+        <div class=" text-right" style="
+    margin-top: -136px;
+    position: relative;
+    margin-left: 75px;
+    margin-right: 75px;
+">
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="text-right" style="color:#fff">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="contact-title">Sign In</h2>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="form-contact contact_form" action="/User/SignUp" method="post">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="honorific" id="honorific" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter honorific'" placeholder="honorific">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="firstName" id="firstName" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter firstName'" placeholder="firstName">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="lastName" id="lastName" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter lastName'" placeholder="lastName">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="gender" id="gender" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter gender'" placeholder="gender">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="age" id="age" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter age'" placeholder="age">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="emailAddress" id="emailAddress" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter emailAddress'" placeholder="emailAddress">
+                                            </div>
+                                        </div>
+                                         <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control valid" name="phoneNumber" id="phoneNumber" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phoneNumber'" placeholder="phoneNumber">
+                                                </div>
+                                         </div>
+                                         <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control valid" name="password" id="password" type="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter password'" placeholder="password">
+                                                </div>
+                                            </div>
+                                         <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control valid" name="userName" id="userName" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter userName'" placeholder="userName">
+                                                </div>
+                                            </div>
+                                         <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input class="form-control valid" name="role" id="role" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter role'" placeholder="role">
+                                                </div>
+                                         </div>
+                                   
+                                    </div>
+                                    <div class="form-group mt-3" style="display: flex; justify-content: center;">
+                                        <input type="submit" style="color:white !important" class="button button-contactForm btn_1">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img src="~/img/logo/logo-white.png" alt class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
 </body>
-</html>
